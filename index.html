@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="">
+      <!-- NavBar start -->
+      <nav class="navbar bg-primary fixed-top" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-dark" href="#">Premium Phone Covers</a>
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="color: white"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-primary"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header bg-primary" id="offcanvas">
+              <h5
+                class="offcanvas-title"
+                id="offcanvasNavbarLabel"
+                style="color: white"
+              >
+                Premium Phone Covers
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    style="color: white"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="nextPage.html"
+                    target="_blank"
+                    style="color: white"
+                    >Browse Covers</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link" style="color: white"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link btn-dark-mode"
+                    id="btnDark"
+                    onclick="darkMode()"
+                  ></button>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="nextPage.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: white"
+                  >
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="nextPage.html">Modern Covers</a></li>
+                    <li>
+                      <a class="dropdown-item" href="nextPage.html">Latest Hits</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="nextPage.html">Popular Ones</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="nextPage.html">Contact Us</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="nextPage.html"
+                        >Review and Complaints</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br />
+      <!-- Navbar End -->
+      <!-- Content Start -->
+      <!-- Poster Start -->
+      <div class="cover">
+        <img src="./img/poster.png" alt="cover" class="page-poster"  data-aos="fade-left" data-aos-duration="1000"/>
+      </div>
+      <!-- Poster End -->
+      <div class="content" data-aos="flip-left" data-aos-duration="1000">
+        <div class="product-intro">
+          <br />
+          <h1 class="slider-title-h1">Our Products</h1>
+          <br />
+          <div class="img-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/Anime/anime1.png" alt="anime-phone-cover" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Art/art1.png" alt="artistic-phone-cover" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/Cartoon/cartoon1.png"
+                    alt="cartoon-phone-cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Hits/hit1.png" alt="popular-phone-cover" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/Modern/modern1.png"
+                    alt="modern-phone-cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Art/art2.png" alt="our-signature-phone-cover" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/Cartoon/cartoon2.png"
+                    alt="panda-phone-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <br />
+          <p class="viewmoreBtn">
+            <a href="nextPage.html" style="color: white; text-decoration: none">
+              View More
+            </a>
+          </p>
+          <br />
+        </div>
+        <hr class="hr" />
+        <br />
+        <!-- Img-Slider End -->
+        <!-- Ad Start -->
+        <div class="advertisement-div" data-aos="zoom-in" data-aos-duration="1000">
+          <a href="nextPage.html" style="text-decoration: none">
+            <div class="grid-ad-parent">
+              <div class="grid-child-1">
+                <img
+                  src="./img/Art/art3landscape.png"
+                  alt="iphone-cover-poster"
+                  class="img-grid"
+                />
+              </div>
+              <div class="grid-child-2">
+                <br />
+                <h1 class="grid-ad-product-title">
+                  Artistic Covers (Pack of 5)
+                </h1>
+                <br />
+                <p class="grid-ad-product-description">
+                  Buy 5 at the price of 4
+                </p>
+                <p class="grid-ad-product-description mrg-btm">
+                  Starting at only <b>Rs.999/-</b>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Ad End -->
+        <br />
+        <hr class="hr" />
+        <br />
+        <!-- Intro -->
+        <div class="intro-div" data-aos="fade-left" data-aos-duration="1000">
+          <br />
+          <h1 class="intro-title">Premium Phone Covers</h1>
+          <br />
+          <p class="intro-description">
+            Welcome to Premium Phone Covers! It's a E-Commerce website designed
+            to fulfill demands of desired phone covers of our valued customers.
+            Moreover, our store contains 1000+ pre-made covers of various types
+            according to your wish and we also accept customized request. Not
+            only this much, our store has special covers for categories like
+            anime, cartoonistic, artistic, modern, primitive, popular, asthetic,
+            and many more. We hope you will find your desired product on our
+            store. Thank you once again for choosing Premium Phone Covers.
+          </p>
+          <br />
+        </div>
+        <!-- Intro End -->
+        <br />
+        <hr class="hr" />
+        <br />
+        <!-- Poster 2 -->
+        <div class="poster-2">
+          <img src="./img/poster2.png" alt="" style="width: 100%" data-aos-duration="1000" data-aos="flip-up"/>
+        </div>
+        <!-- Poster 2 End -->
+        <br />
+        <hr class="hr" />
+        <br />
+        <!-- About Us -->
+        <div class="reason-div" data-aos-duration="1000" data-aos="zoom-in-down">
+          <br />
+          <h1 class="reason-title"><b>Why Us?</b></h1>
+          <br />
+          <div class="pics-grid-parent">
+            <div class="pic-1" data-aos-duration="1000" data-aos="fade-right">
+              <img
+                src="./img/graphics/certified-light.png"
+                alt="certified-pic"
+                class="img-pic"
+                id="pic-certified"
+              />
+              <p class="reason-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat labore harum omnis quidem voluptatem, ipsa odio
+                exercitationem fugit necessitatibus, voluptatum distinctio atque
+                a perspiciatis, dignissimos vel dolorem error quos nemo!
+              </p>
+            </div>
+            <div class="pic-2" data-aos-duration="1000" data-aos="fade-down">
+              <img
+                src="./img/graphics/fast-light.png"
+                alt="certified-pic"
+                class="img-pic"
+                id="pic-fast"
+              />
+              <p class="reason-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat labore harum omnis quidem voluptatem, ipsa odio
+                exercitationem fugit necessitatibus, voluptatum distinctio atque
+                a perspiciatis, dignissimos vel dolorem error quos nemo!
+              </p>
+            </div>
+            <div class="pic-3" data-aos-duration="1000" data-aos="fade-left">
+              <img
+                src="./img/graphics/idea-light.png"
+                alt="certified-pic"
+                class="img-pic"
+                id="pic-idea"
+              />
+              <p class="reason-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat labore harum omnis quidem voluptatem, ipsa odio
+                exercitationem fugit necessitatibus, voluptatum distinctio atque
+                a perspiciatis, dignissimos vel dolorem error quos nemo!
+              </p>
+            </div>
+          </div>
+          <br />
+        </div>
+        <!-- About Us End -->
+        <br />
+        <hr />
+        <br />
+        <!-- Browse More -->
+        <div class="browse-more" data-aos-duration="1000" data-aos="zoom-in-up">
+          <br />
+          <h1 class="browse-more-title">Browse More</h1>
+          <br />
+          <p class="browse-more-desc">
+            Click the Button Below to check out some of our
+            <b>awesome</b> creations!
+          </p>
+          <button class="browse-more-button">
+            <a href="nextPage.html" style="text-decoration: none">Click Here</a>
+          </button>
+          <br />
+        </div>
+        <!-- Browse More End -->
+        <br />
+        <!-- Footer -->
+        <footer>
+          <p style="text-align: center; margin-bottom: 0">
+            Copyright © 2023 Premium Phone Covers | Managed By Divya Darsheel
+            Sharma
+          </p>
+        </footer>
+        <!-- Footer End -->
+      </div>
+      <!-- Content End -->
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const width = window.outerWidth;
+      if(width <= 760){
+        const swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      }); 
+      } else{
+        const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      }); 
+      console.log("mobile");
+      }
+
+    </script>
+    <script>
+      const btnDark = document.getElementById("btnDark");
+      const nav = document.getElementById("nav");
+      const oc = document.getElementById("offcanvasNavbar");
+      const ochead = document.getElementById("offcanvas");
+      const hr = document.querySelectorAll(".hr");
+      const certified = document.getElementById("pic-certified");
+      const fast = document.getElementById("pic-fast");
+      const idea = document.getElementById("pic-idea");
+      if (document.body.classList.contains("dark") == true) {
+        btnDark.innerText = "Light Mode";
+      } else {
+        btnDark.innerText = "Dark Mode";
+      }
+      function darkMode() {
+        if (document.body.classList.contains("dark") == false) {
+          document.body.classList.add("dark");
+          document.body.style.backgroundColor = "var(--body-background)";
+          btnDark.innerText = "Dark Mode";
+          nav.style.backgroundColor = "var(--body-background)";
+          nav.classList.remove("bg-primary");
+          oc.classList.remove("bg-primary");
+          oc.style.backgroundColor = "var(--body-background)";
+          ochead.classList.remove("bg-primary");
+          ochead.style.backgroundColor = "var(--body-background)";
+        } else {
+          document.body.classList.remove("dark");
+          document.body.style.backgroundColor = "#fff";
+          btnDark.innerText = "Light Mode";
+          nav.classList.add("bg-primary");
+          nav.style.backgroundColor = "";
+          oc.classList.add("bg-primary");
+          oc.style.backgroundColor = "";
+          ochead.classList.add("bg-primary");
+          ochead.style.backgroundColor = "";
+        }
+        if (
+          certified.src.match("./img/graphics/certified-dark.png") &&
+          fast.src.match("./img/graphics/fast-dark.png") &&
+          idea.src.match("./img/graphics/idea-dark.png")
+        ) {
+          certified.src = "./img/graphics/certified-light.png";
+          fast.src = "./img/graphics/fast-light.png";
+          idea.src = "./img/graphics/idea-light.png";
+        } else {
+          certified.src = "./img/graphics/certified-dark.png";
+          fast.src = "./img/graphics/fast-dark.png";
+          idea.src = "./img/graphics/idea-dark.png";
+        }
+      }
+    </script>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"
+  ></script>
+</html>
